@@ -7,7 +7,7 @@ require (
 	github.com/bytedance/sonic v1.13.2
 	github.com/cloudwego/eino v0.4.7
 	github.com/golang/mock v1.6.0
-	github.com/monosolo101/eino-ext/libs/acl/langfuse v0.0.0-20250829170843-08982ca8f088
+	github.com/monosolo101/eino-ext/libs/acl/langfuse v0.0.0-20250829171139-43ee0d6d02e1
 	github.com/stretchr/testify v1.10.0
 )
 

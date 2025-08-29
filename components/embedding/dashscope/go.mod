@@ -6,7 +6,7 @@ require (
 	github.com/bytedance/mockey v1.2.14
 	github.com/cloudwego/eino v0.4.7
 	github.com/meguminnnnnnnnn/go-openai v0.0.0-20250821095446-07791bea23a0
-	github.com/monosolo101/eino-ext/libs/acl/openai v0.0.0-20250829170843-08982ca8f088
+	github.com/monosolo101/eino-ext/libs/acl/openai v0.0.0-20250829171139-43ee0d6d02e1
 )
 
 require (

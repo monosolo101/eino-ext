@@ -6,7 +6,7 @@ require (
 	github.com/bytedance/mockey v1.2.14
 	github.com/bytedance/sonic v1.13.2
 	github.com/cloudwego/eino v0.3.51
-	github.com/monosolo101/eino-ext/libs/acl/opentelemetry v0.0.0-20250829170843-08982ca8f088
+	github.com/monosolo101/eino-ext/libs/acl/opentelemetry v0.0.0-20250829171139-43ee0d6d02e1
 	github.com/smartystreets/goconvey v1.8.1
 	go.opentelemetry.io/contrib/instrumentation/runtime v0.59.0
 	go.opentelemetry.io/otel v1.34.0

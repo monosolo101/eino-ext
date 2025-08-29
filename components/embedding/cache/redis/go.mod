@@ -6,7 +6,7 @@ replace github.com/monosolo101/eino-ext/components/embedding/cache => ../
 
 require (
 	github.com/bytedance/sonic v1.13.2
-	github.com/monosolo101/eino-ext/components/embedding/cache v0.0.0-20250829170843-08982ca8f088
+	github.com/monosolo101/eino-ext/components/embedding/cache v0.0.0-20250829171139-43ee0d6d02e1
 	github.com/redis/go-redis/v9 v9.8.0
 	github.com/stretchr/testify v1.10.0
 )

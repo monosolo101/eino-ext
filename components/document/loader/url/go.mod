@@ -4,7 +4,7 @@ go 1.23.0
 
 require (
 	github.com/cloudwego/eino v0.4.7
-	github.com/monosolo101/eino-ext/components/document/parser/html v0.0.0-20250829170843-08982ca8f088
+	github.com/monosolo101/eino-ext/components/document/parser/html v0.0.0-20250829171139-43ee0d6d02e1
 	github.com/stretchr/testify v1.9.0
 )
 

@@ -9,8 +9,8 @@ replace (
 
 require (
 	github.com/cloudwego/eino v0.4.7
-	github.com/monosolo101/eino-ext/components/embedding/cache v0.0.0-20250829170843-08982ca8f088
-	github.com/monosolo101/eino-ext/components/embedding/cache/redis v0.0.0-20250829170843-08982ca8f088
+	github.com/monosolo101/eino-ext/components/embedding/cache v0.0.0-20250829171139-43ee0d6d02e1
+	github.com/monosolo101/eino-ext/components/embedding/cache/redis v0.0.0-20250829171139-43ee0d6d02e1
 	github.com/redis/go-redis/v9 v9.8.0
 )
 
