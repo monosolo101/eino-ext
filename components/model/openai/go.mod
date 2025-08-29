@@ -7,7 +7,7 @@ require (
 	github.com/cloudwego/eino v0.4.7
 	github.com/eino-contrib/jsonschema v1.0.0
 	github.com/meguminnnnnnnnn/go-openai v0.0.0-20250821095446-07791bea23a0
-	github.com/monosolo101/eino-ext/libs/acl/openai main
+	github.com/monosolo101/eino-ext/libs/acl/openai v0.0.0-20250829170843-08982ca8f088
 	github.com/wk8/go-ordered-map/v2 v2.1.8
 )
 

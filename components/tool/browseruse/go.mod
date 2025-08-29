@@ -8,8 +8,8 @@ require (
 	github.com/chromedp/cdproto v0.0.0-20250319231242-a755498943c8
 	github.com/chromedp/chromedp v0.13.3
 	github.com/cloudwego/eino v0.4.7
-	github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2 main
 	github.com/eino-contrib/jsonschema v1.0.0
+	github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2 v2.0.0-20250829170843-08982ca8f088
 	github.com/stretchr/testify v1.9.0
 	github.com/wk8/go-ordered-map/v2 v2.1.8
 )
