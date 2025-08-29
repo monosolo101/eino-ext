@@ -354,10 +354,25 @@ func (c *Client) genRequest(in []*schema.Message, opts ...model.Option) (*openai
 		MaxCompletionTokens: c.config.MaxCompletionTokens,
 	}, opts...)
 
+	// precedence resolution for max completion tokens
+	var effectiveMax *int
+	if specOptions.MaxCompletionTokens != nil {
+		effectiveMax = specOptions.MaxCompletionTokens
+	} else if options.MaxTokens != nil {
+		effectiveMax = options.MaxTokens
+	} else if c.config.MaxCompletionTokens != nil {
+		effectiveMax = c.config.MaxCompletionTokens
+	} else if c.config.MaxTokens != nil {
+		effectiveMax = c.config.MaxTokens
+	}
+	var maxCompletionTokens int
+	if effectiveMax != nil {
+		maxCompletionTokens = *effectiveMax
+	}
+
 	req := &openai.ChatCompletionRequest{
 		Model:               *options.Model,
-		MaxTokens:           dereferenceOrZero(options.MaxTokens),
-		MaxCompletionTokens: dereferenceOrZero(specOptions.MaxCompletionTokens),
+		MaxCompletionTokens: maxCompletionTokens,
 		Temperature:         options.Temperature,
 		TopP:                dereferenceOrZero(options.TopP),
 		Stop:                options.Stop,
@@ -380,7 +395,7 @@ func (c *Client) genRequest(in []*schema.Message, opts ...model.Option) (*openai
 		Tools:    c.rawTools,
 		Config: &model.Config{
 			Model:       req.Model,
-			MaxTokens:   req.MaxTokens,
+			MaxTokens:   req.MaxCompletionTokens,
 			Temperature: dereferenceOrZero(req.Temperature),
 			TopP:        req.TopP,
 			Stop:        req.Stop,
