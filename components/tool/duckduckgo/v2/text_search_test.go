@@ -689,7 +689,7 @@ func TestParseSearchResponse(t *testing.T) {
 
           <h2 class="result__title">
           
-            <a rel="nofollow" class="result__a" href="https://github.com/cloudwego/eino-ext">GitHub - cloudwego/eino-ext: Various extensions for the Eino framework ...</a>
+            <a rel="nofollow" class="result__a" href="https://github.com/monosolo101/eino-ext">GitHub - monosolo101/eino-ext: Various extensions for the Eino framework ...</a>
           
           </h2>
 
@@ -699,15 +699,15 @@ func TestParseSearchResponse(t *testing.T) {
                 <div class="result__extras__url">
                   <span class="result__icon">
                     
-                      <a rel="nofollow" href="https://github.com/cloudwego/eino-ext">
+                      <a rel="nofollow" href="https://github.com/monosolo101/eino-ext">
                         <img class="result__icon__img" width="16" height="16" alt=""
                           src="//external-content.duckduckgo.com/ip3/github.com.ico" name="i15" />
                       </a>
                   
                   </span>
 
-                  <a class="result__url" href="https://github.com/cloudwego/eino-ext">
-                  github.com/cloudwego/eino-ext
+                  <a class="result__url" href="https://github.com/monosolo101/eino-ext">
+                  github.com/monosolo101/eino-ext
                   </a>
 
                   
@@ -716,7 +716,7 @@ func TestParseSearchResponse(t *testing.T) {
             </div>
 
             
-                  <a class="result__snippet" href="https://github.com/cloudwego/eino-ext"><b>Eino</b>-ext is a project that hosts various extensions for the <b>Eino</b> framework, a powerful and flexible framework for building LLM applications. The extensions include component implementations, callback handlers, and devops tools for <b>Eino</b>.</a>
+                  <a class="result__snippet" href="https://github.com/monosolo101/eino-ext"><b>Eino</b>-ext is a project that hosts various extensions for the <b>Eino</b> framework, a powerful and flexible framework for building LLM applications. The extensions include component implementations, callback handlers, and devops tools for <b>Eino</b>.</a>
             
 
             <div class="clear"></div>
