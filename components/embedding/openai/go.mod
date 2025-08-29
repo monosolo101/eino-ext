@@ -6,7 +6,7 @@ go 1.23.0
 require (
 	github.com/bytedance/mockey v1.2.14
 	github.com/cloudwego/eino v0.3.27
-	github.com/monosolo101/eino-ext/libs/acl/openai v0.0.0-00010101000000-000000000000
+	github.com/monosolo101/eino-ext/libs/acl/openai main
 	github.com/meguminnnnnnnnn/go-openai v0.0.0-20250408071642-761325becfd6
 )
 

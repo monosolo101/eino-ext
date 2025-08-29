@@ -86,7 +86,7 @@ for dir in "${directories[@]}"; do
             if [ -f "go.sum" ]; then
                 rm go.sum
             fi
-            GOPROXY=direct go mod tidy
+            GOPRIVATE=github.com/monosolo101/eino-ext go mod tidy
             echo "✓ go mod tidy completed in $dir"
         else
             echo "⚠ go.mod not found in $dir"
