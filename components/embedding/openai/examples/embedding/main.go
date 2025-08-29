@@ -26,7 +26,7 @@ import (
 	"github.com/cloudwego/eino/compose"
 	callbacksHelper "github.com/cloudwego/eino/utils/callbacks"
 
-	"github.com/cloudwego/eino-ext/components/embedding/openai"
+	"github.com/monosolo101/eino-ext/components/embedding/openai"
 )
 
 func main() {

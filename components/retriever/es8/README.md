@@ -17,7 +17,7 @@ An Elasticsearch 8.x retriever implementation for [Eino](https://github.com/clou
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/retriever/es8@latest
+go get github.com/monosolo101/eino-ext/components/retriever/es8@latest
 ```
 
 ## Quick Start
@@ -31,8 +31,8 @@ import (
 	"github.com/elastic/go-elasticsearch/v8"
 	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
 
-	"github.com/cloudwego/eino-ext/components/retriever/es8"
-	"github.com/cloudwego/eino-ext/components/retriever/es8/search_mode"
+	"github.com/monosolo101/eino-ext/components/retriever/es8"
+	"github.com/monosolo101/eino-ext/components/retriever/es8/search_mode"
 )
 
 const (
@@ -140,13 +140,13 @@ type RetrieverConfig struct {
     Client *elasticsearch.Client // Required: Elasticsearch client instance
     Index  string               // Required: Index name to retrieve documents from
     TopK   int                  // Required: Number of results to return
-    
+
     // Required: Search mode configuration
     SearchMode search_mode.SearchMode
-    
+
     // Required: Function to parse Elasticsearch hits into Documents
     ResultParser func(ctx context.Context, hit types.Hit) (*schema.Document, error)
-    
+
     // Optional: Required only if query vectorization is needed
     Embedding embedding.Embedder
 }

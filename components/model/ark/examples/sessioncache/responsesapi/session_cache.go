@@ -27,8 +27,8 @@ import (
 
 	arkModel "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model"
 
-	"github.com/cloudwego/eino-ext/components/model/ark"
 	"github.com/cloudwego/eino/schema"
+	"github.com/monosolo101/eino-ext/components/model/ark"
 )
 
 func main() {

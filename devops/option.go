@@ -19,7 +19,7 @@ package devops
 import (
 	"reflect"
 
-	"github.com/cloudwego/eino-ext/devops/internal/model"
+	"github.com/monosolo101/eino-ext/devops/internal/model"
 )
 
 // WithDevServerPort sets dev server port, default to 52538
@@ -31,7 +31,7 @@ func WithDevServerPort(port string) model.DevOption {
 
 // AppendType registers a concrete type that can be chosen as an implementation of an interface
 // during mock debugging input in the Eino Dev plugin. The identifier is the type.String() value,
-// and some generic types are also registered in github.com/cloudwego/eino-ext/devops/internal/model/types.go:registeredTypes,
+// and some generic types are also registered in github.com/monosolo101/eino-ext/devops/internal/model/types.go:registeredTypes,
 // e.g.,
 // `*schema.Message`, `schema.Message`, `[]*schema.Message`, `map[string]interface {}`.
 //

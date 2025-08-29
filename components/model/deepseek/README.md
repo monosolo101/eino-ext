@@ -15,7 +15,7 @@ A DeepSeek model implementation for [Eino](https://github.com/cloudwego/eino) th
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/model/deepseek@latest
+go get github.com/monosolo101/eino-ext/components/model/deepseek@latest
 ```
 
 ## Quick Start
@@ -34,7 +34,7 @@ import (
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/schema"
 
-	"github.com/cloudwego/eino-ext/components/model/deepseek"
+	"github.com/monosolo101/eino-ext/components/model/deepseek"
 )
 
 func main() {

@@ -17,8 +17,8 @@
 package openai
 
 import (
-	"github.com/cloudwego/eino-ext/libs/acl/openai"
 	"github.com/cloudwego/eino/components/model"
+	"github.com/monosolo101/eino-ext/libs/acl/openai"
 )
 
 // WithExtraFields is used to set extra body fields for the request.

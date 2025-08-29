@@ -13,7 +13,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/bingsearch
+go get github.com/monosolo101/eino-ext/components/tool/bingsearch
 ```
 
 ## 快速开始
@@ -26,24 +26,24 @@ import (
 	"log"
 	"os"
 	"time"
-	
+
 	"github.com/bytedance/sonic"
-	"github.com/cloudwego/eino-ext/components/tool/bingsearch"
+	"github.com/monosolo101/eino-ext/components/tool/bingsearch"
 )
 
 func main() {
 	// 设置 Bing Search API 密钥
 	bingSearchAPIKey := os.Getenv("BING_SEARCH_API_KEY")
-	
+
 	// 创建上下文
 	ctx := context.Background()
-	
+
 	// 创建 Bing Search 工具
 	bingSearchTool, err := bingsearch.NewTool(ctx, &bingsearch.Config{
 		APIKey: bingSearchAPIKey,
 		Cache:  5 * time.Minute,
 	})
-	
+
 	if err != nil {
 		log.Fatalf("Failed to create tool: %v", err)
 	}
@@ -79,6 +79,7 @@ type Config struct {
 ## Search
 
 ### 请求 Schema
+
 ```go
 type SearchRequest struct {
     Query  string `json:"query" jsonschema:"description=The query to search the web for"`
@@ -87,6 +88,7 @@ type SearchRequest struct {
 ```
 
 ### 响应 Schema
+
 ```go
 type SearchResponse struct {
     Results []*searchResult `json:"results" jsonschema:"description=The results of the search"`
@@ -101,4 +103,4 @@ type searchResult struct {
 
 ## 更多详情
 
-- [Eino 文档](https://github.com/cloudwego/eino) 
+- [Eino 文档](https://github.com/cloudwego/eino)

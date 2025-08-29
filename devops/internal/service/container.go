@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/matoous/go-nanoid"
+	gonanoid "github.com/matoous/go-nanoid"
 
-	"github.com/cloudwego/eino-ext/devops/internal/model"
-	devmodel "github.com/cloudwego/eino-ext/devops/model"
 	"github.com/cloudwego/eino/compose"
+	"github.com/monosolo101/eino-ext/devops/internal/model"
+	devmodel "github.com/monosolo101/eino-ext/devops/model"
 )
 
 var _ ContainerService = &containerServiceImpl{}

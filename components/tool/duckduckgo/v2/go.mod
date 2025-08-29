@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2
+module github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2
 
 go 1.23.0
 

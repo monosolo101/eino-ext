@@ -1,11 +1,11 @@
-module github.com/cloudwego/eino-ext/components/document/parser/xlsx
+module github.com/monosolo101/eino-ext/components/document/parser/xlsx
 
 go 1.23.0
 
 
 require (
 	github.com/cloudwego/eino v0.3.31
-	github.com/cloudwego/eino-ext/components/document/loader/file v0.0.0-20250519091007-282cc7eb18d3
+	github.com/monosolo101/eino-ext/components/document/loader/file v0.0.0-20250519091007-282cc7eb18d3
 	github.com/stretchr/testify v1.9.0
 	github.com/xuri/excelize/v2 v2.9.0
 )

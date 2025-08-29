@@ -4,7 +4,7 @@ English | [简体中文](README_zh.md)
 
 A Wikipedia search tool implementation for [Eino](https://github.com/cloudwego/eino) that implements the `InvokableTool` interface. This enables seamless integration with Eino's ChatModel interaction system and `ToolsNode` for enhanced search capabilities.
 
-## Features    
+## Features
 
 - Implements `github.com/cloudwego/eino/components/tool.InvokableTool`
 - Easy integration with Eino's tool system
@@ -13,7 +13,7 @@ A Wikipedia search tool implementation for [Eino](https://github.com/cloudwego/e
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/wikipedia
+go get github.com/monosolo101/eino-ext/components/tool/wikipedia
 ```
 
 ## Quick Start
@@ -23,7 +23,7 @@ package main
 
 import (
 	"context"
-	"github.com/cloudwego/eino-ext/components/tool/wikipedia"
+	"github.com/monosolo101/eino-ext/components/tool/wikipedia"
 	"github.com/cloudwego/eino/components/tool"
 	"log"
 	"time"
@@ -66,7 +66,7 @@ type Config struct {
     // The URL language depends on the settings you have set for the Language field
     // Optional. Default: "https://en.wikipedia.org/w/api.php".
     BaseURL string
-    
+
     // UserAgent is the user agent to use for the http client.
     // Optional but HIGHLY RECOMMENDED to override the default with your project's info.
     // It is recommended to follow Wikipedia's robot specification:
@@ -98,6 +98,7 @@ type Config struct {
 ## Search
 
 ### Request Schema
+
 ```go
 type SearchRequest struct {
     // Query is the query to search the web for.
@@ -106,6 +107,7 @@ type SearchRequest struct {
 ```
 
 ### Response Schema
+
 ```go
 type SearchResponse struct {
     // Results is the list of search results.

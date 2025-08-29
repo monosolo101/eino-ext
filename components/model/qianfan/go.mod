@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/model/qianfan
+module github.com/monosolo101/eino-ext/components/model/qianfan
 
 go 1.23.0
 

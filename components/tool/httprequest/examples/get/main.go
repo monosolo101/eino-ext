@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"github.com/bytedance/sonic"
-	req "github.com/cloudwego/eino-ext/components/tool/httprequest/get"
+	req "github.com/monosolo101/eino-ext/components/tool/httprequest/get"
 )
 
 func main() {

@@ -28,14 +28,14 @@ import (
 	gonanoid "github.com/matoous/go-nanoid"
 	"github.com/stretchr/testify/assert"
 
-	devmodel "github.com/cloudwego/eino-ext/devops/model"
 	"github.com/cloudwego/eino/components"
 	"github.com/cloudwego/eino/components/prompt"
 	"github.com/cloudwego/eino/components/retriever"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
+	devmodel "github.com/monosolo101/eino-ext/devops/model"
 
-	"github.com/cloudwego/eino-ext/devops/internal/utils/generic"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/generic"
 )
 
 type mockContainer interface {

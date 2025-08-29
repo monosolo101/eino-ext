@@ -35,8 +35,8 @@ import (
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 
-	"github.com/cloudwego/eino-ext/devops/internal/model"
-	"github.com/cloudwego/eino-ext/devops/internal/utils/safego"
+	"github.com/monosolo101/eino-ext/devops/internal/model"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/safego"
 )
 
 func Test_NewCallbackOption(t *testing.T) {

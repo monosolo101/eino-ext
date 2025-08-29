@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/embedding/tencentcloud
+module github.com/monosolo101/eino-ext/components/embedding/tencentcloud
 
 go 1.23.0
 

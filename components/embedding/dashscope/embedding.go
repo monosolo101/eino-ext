@@ -21,8 +21,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cloudwego/eino-ext/libs/acl/openai"
 	"github.com/cloudwego/eino/components/embedding"
+	"github.com/monosolo101/eino-ext/libs/acl/openai"
 )
 
 const (

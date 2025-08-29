@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-请注意，此实现已**废弃**。请使用 [DuckDuckGo V2](https://github.com/cloudwego/eino-ext/tree/main/components/tool/duckduckgo/v2)。
+请注意，此实现已**废弃**。请使用 [DuckDuckGo V2](https://github.com/monosolo101/eino-ext/tree/main/components/tool/duckduckgo/v2)。
 
 这是一个为 [Eino](https://github.com/cloudwego/eino) 实现的 DuckDuckGo 搜索工具。该工具实现了 `InvokableTool` 接口，可以与 Eino 的 ChatModel 交互系统和 `ToolsNode` 无缝集成。
 
@@ -15,7 +15,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/duckduckgo
+go get github.com/monosolo101/eino-ext/components/tool/duckduckgo
 ```
 
 ## 快速开始
@@ -27,8 +27,8 @@ import (
     "context"
     "log"
 
-    "github.com/cloudwego/eino-ext/components/tool/duckduckgo"
-    "github.com/cloudwego/eino-ext/components/tool/duckduckgo/ddgsearch"
+    "github.com/monosolo101/eino-ext/components/tool/duckduckgo"
+    "github.com/monosolo101/eino-ext/components/tool/duckduckgo/ddgsearch"
     "github.com/cloudwego/eino/components/tool"
 )
 
@@ -74,6 +74,7 @@ type Config struct {
 ## Search
 
 ### 请求 Schema
+
 ```go
 type SearchRequest struct {
     Query string `json:"query" jsonschema:"description=要搜索的查询内容"`
@@ -82,6 +83,7 @@ type SearchRequest struct {
 ```
 
 ### 响应 Schema
+
 ```go
 type SearchResponse struct {
     Results []SearchResult `json:"results" jsonschema:"description=搜索结果列��"`
@@ -97,4 +99,4 @@ type SearchResult struct {
 ## 更多详情
 
 - [DuckDuckGo 搜索库文档](ddgsearch/README_zh.md)
-- [Eino 文档](https://github.com/cloudwego/eino) 
+- [Eino 文档](https://github.com/cloudwego/eino)

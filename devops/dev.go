@@ -20,9 +20,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/cloudwego/eino-ext/devops/internal/apihandler"
-	"github.com/cloudwego/eino-ext/devops/internal/model"
-	"github.com/cloudwego/eino-ext/devops/internal/utils/safego"
+	"github.com/monosolo101/eino-ext/devops/internal/apihandler"
+	"github.com/monosolo101/eino-ext/devops/internal/model"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/safego"
 )
 
 // Init start eino devops server

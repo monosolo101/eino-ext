@@ -14,7 +14,7 @@ A set of HTTP request tools for [Eino](https://github.com/cloudwego/eino) that i
 Use `go get` to install the package (adjust the module path to your project structure):
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/httprequest
+go get github.com/monosolo101/eino-ext/components/tool/httprequest
 ```
 
 ## Quick Start
@@ -33,7 +33,7 @@ import (
 	"time"
 
 	"github.com/bytedance/sonic"
-	req "github.com/cloudwego/eino-ext/components/tool/httprequest/get"
+	req "github.com/monosolo101/eino-ext/components/tool/httprequest/get"
 )
 
 func main() {
@@ -90,7 +90,7 @@ import (
 	"time"
 
 	"github.com/bytedance/sonic"
-	post "github.com/cloudwego/eino-ext/components/tool/httprequest/post"
+	post "github.com/monosolo101/eino-ext/components/tool/httprequest/post"
 )
 
 func main() {
@@ -167,7 +167,7 @@ type PostRequest struct {
 }
 ```
 
-## Example with agent 
+## Example with agent
 
 ```go
 package main
@@ -180,8 +180,8 @@ import (
 	"time"
 
 	"github.com/bytedance/sonic"
-	"github.com/cloudwego/eino-ext/components/model/openai"
-	req "github.com/cloudwego/eino-ext/components/tool/httprequest/get"
+	"github.com/monosolo101/eino-ext/components/model/openai"
+	req "github.com/monosolo101/eino-ext/components/tool/httprequest/get"
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
@@ -358,6 +358,7 @@ Here is documentation on the API:
 ```
 
 ## For More Details
+
 - [Eino Documentation](https://github.com/cloudwego/eino)
 - [InvokableTool Interface Reference](https://pkg.go.dev/github.com/cloudwego/eino/components/tool)
 - [langchain_community Reference](https://python.langchain.com/docs/integrations/tools/requests/)

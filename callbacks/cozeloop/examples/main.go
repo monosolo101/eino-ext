@@ -19,9 +19,9 @@ package main
 import (
 	"context"
 
-	ccb "github.com/cloudwego/eino-ext/callbacks/cozeloop"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/coze-dev/cozeloop-go"
+	ccb "github.com/monosolo101/eino-ext/callbacks/cozeloop"
 )
 
 func main() {

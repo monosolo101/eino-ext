@@ -24,13 +24,13 @@ import (
 	"strconv"
 	"strings"
 
-	ri "github.com/cloudwego/eino-ext/components/indexer/redis"
 	"github.com/cloudwego/eino/components/embedding"
 	"github.com/cloudwego/eino/schema"
+	ri "github.com/monosolo101/eino-ext/components/indexer/redis"
 	"github.com/redis/go-redis/v9"
 )
 
-// This example is related to example in https://github.com/cloudwego/eino-ext/tree/main/components/retriever/redis/examples/customized_retriever
+// This example is related to example in https://github.com/monosolo101/eino-ext/tree/main/components/retriever/redis/examples/customized_retriever
 
 func main() {
 	ctx := context.Background()

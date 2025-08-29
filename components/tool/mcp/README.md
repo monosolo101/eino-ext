@@ -11,7 +11,7 @@ A MCP Tool implementation for [Eino](https://github.com/cloudwego/eino) that imp
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/mcp@latest
+go get github.com/monosolo101/eino-ext/components/tool/mcp@latest
 ```
 
 ## Quick Start
@@ -32,7 +32,7 @@ import (
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 
-	mcpp "github.com/cloudwego/eino-ext/components/tool/mcp"
+	mcpp "github.com/monosolo101/eino-ext/components/tool/mcp"
 )
 
 func main() {

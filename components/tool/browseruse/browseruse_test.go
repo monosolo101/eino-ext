@@ -28,7 +28,7 @@ import (
 	"github.com/chromedp/chromedp"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2"
+	"github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2"
 )
 
 func TestNewBrowserUseTool(t *testing.T) {

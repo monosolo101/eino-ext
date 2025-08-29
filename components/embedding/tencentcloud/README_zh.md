@@ -15,7 +15,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/embedding/tencentcloud
+go get github.com/monosolo101/eino-ext/components/embedding/tencentcloud
 ```
 
 ## 快速开始
@@ -27,13 +27,13 @@ import (
     "context"
     "fmt"
     "os"
-    
-    "github.com/cloudwego/eino-ext/components/embedding/tencentcloud"
+
+    "github.com/monosolo101/eino-ext/components/embedding/tencentcloud"
 )
 
 func main() {
     ctx := context.Background()
-    
+
     // 创建 embedder 配置
     cfg := &tencentcloud.EmbeddingConfig{
         SecretID:  os.Getenv("TENCENTCLOUD_SECRET_ID"),
@@ -78,12 +78,14 @@ embedder 会自动处理大规模文本数组的批处理。根据腾讯云 API 
 ### Token 使用量追踪
 
 embedder 通过 Eino 的回调系统追踪 token 使用量。token 使用信息包括：
+
 - 输入 token 数量
 - 总 token 数量
 
 ### 回调支持
 
 embedder 完全支持 Eino 的回调系统，支持：
+
 - 错误追踪
 - 开始/结束事件监控
 - Token 使用统计
@@ -91,4 +93,4 @@ embedder 完全支持 Eino 的回调系统，支持：
 ## 更多信息
 
 - [腾讯云混元 API 文档](https://cloud.tencent.com/document/product/1729/102832)
-- [Eino 文档](https://github.com/cloudwego/eino) 
+- [Eino 文档](https://github.com/cloudwego/eino)

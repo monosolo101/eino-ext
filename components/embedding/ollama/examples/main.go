@@ -18,15 +18,16 @@ package main
 
 import (
 	"context"
-	"github.com/cloudwego/eino/callbacks"
-	"github.com/cloudwego/eino/components/embedding"
-	"github.com/cloudwego/eino/compose"
-	callbacksHelper "github.com/cloudwego/eino/utils/callbacks"
 	"log"
 	"os"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/embedding/ollama"
+	"github.com/cloudwego/eino/callbacks"
+	"github.com/cloudwego/eino/components/embedding"
+	"github.com/cloudwego/eino/compose"
+	callbacksHelper "github.com/cloudwego/eino/utils/callbacks"
+
+	"github.com/monosolo101/eino-ext/components/embedding/ollama"
 )
 
 func main() {

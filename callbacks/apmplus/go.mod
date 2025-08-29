@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/callbacks/apmplus
+module github.com/monosolo101/eino-ext/callbacks/apmplus
 
 go 1.23.0
 
@@ -6,7 +6,7 @@ require (
 	github.com/bytedance/mockey v1.2.14
 	github.com/bytedance/sonic v1.13.2
 	github.com/cloudwego/eino v0.3.51
-	github.com/cloudwego/eino-ext/libs/acl/opentelemetry v0.0.0-20250225080340-5935633151d3
+	github.com/monosolo101/eino-ext/libs/acl/opentelemetry v0.0.0-20250225080340-5935633151d3
 	github.com/smartystreets/goconvey v1.8.1
 	go.opentelemetry.io/contrib/instrumentation/runtime v0.59.0
 	go.opentelemetry.io/otel v1.34.0

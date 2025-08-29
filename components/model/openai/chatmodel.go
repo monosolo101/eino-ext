@@ -26,7 +26,7 @@ import (
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/schema"
 
-	"github.com/cloudwego/eino-ext/libs/acl/openai"
+	"github.com/monosolo101/eino-ext/libs/acl/openai"
 )
 
 var _ model.ToolCallingChatModel = (*ChatModel)(nil)

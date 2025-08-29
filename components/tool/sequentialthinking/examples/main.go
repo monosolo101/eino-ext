@@ -19,10 +19,10 @@ package main
 import (
 	"context"
 	"fmt"
-	
+
 	"github.com/bytedance/sonic"
-	
-	"github.com/cloudwego/eino-ext/components/tool/sequentialthinking"
+
+	"github.com/monosolo101/eino-ext/components/tool/sequentialthinking"
 )
 
 func main() {

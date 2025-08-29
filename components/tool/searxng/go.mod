@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/tool/searxng
+module github.com/monosolo101/eino-ext/components/tool/searxng
 
 go 1.22.6
 

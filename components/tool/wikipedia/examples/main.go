@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/bytedance/sonic"
-	"github.com/cloudwego/eino-ext/components/tool/wikipedia"
+	"github.com/monosolo101/eino-ext/components/tool/wikipedia"
 )
 
 func main() {

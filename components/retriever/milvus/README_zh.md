@@ -25,11 +25,11 @@ import (
 	"fmt"
 	"log"
 	"os"
-	
-	"github.com/cloudwego/eino-ext/components/embedding/ark"
+
+	"github.com/monosolo101/eino-ext/components/embedding/ark"
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
-	
-	"github.com/cloudwego/eino-ext/components/retriever/milvus"
+
+	"github.com/monosolo101/eino-ext/components/retriever/milvus"
 )
 
 func main() {
@@ -39,7 +39,7 @@ func main() {
 	password := os.Getenv("MILVUS_PASSWORD")
 	arkApiKey := os.Getenv("ARK_API_KEY")
 	arkModel := os.Getenv("ARK_MODEL")
-	
+
 	// Create a client
 	ctx := context.Background()
 	cli, err := client.NewClient(ctx, client.Config{
@@ -52,13 +52,13 @@ func main() {
 		return
 	}
 	defer cli.Close()
-	
+
 	// Create an embedding model
 	emb, err := ark.NewEmbedder(ctx, &ark.EmbeddingConfig{
 		APIKey: arkApiKey,
 		Model:  arkModel,
 	})
-	
+
 	// Create a retriever
 	retriever, err := milvus.NewRetriever(ctx, &milvus.RetrieverConfig{
 		Client:      cli,
@@ -81,14 +81,14 @@ func main() {
 		log.Fatalf("Failed to create retriever: %v", err)
 		return
 	}
-	
+
 	// Retrieve documents
 	documents, err := retriever.Retrieve(ctx, "milvus")
 	if err != nil {
 		log.Fatalf("Failed to retrieve: %v", err)
 		return
 	}
-	
+
 	// Print the documents
 	for i, doc := range documents {
 		fmt.Printf("Document %d:\n", i)

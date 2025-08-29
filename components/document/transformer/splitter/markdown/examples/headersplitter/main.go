@@ -26,7 +26,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	callbacksHelper "github.com/cloudwego/eino/utils/callbacks"
 
-	"github.com/cloudwego/eino-ext/components/document/transformer/splitter/markdown"
+	"github.com/monosolo101/eino-ext/components/document/transformer/splitter/markdown"
 )
 
 func main() {

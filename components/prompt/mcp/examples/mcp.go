@@ -27,7 +27,7 @@ import (
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 
-	mcpp "github.com/cloudwego/eino-ext/components/prompt/mcp"
+	mcpp "github.com/monosolo101/eino-ext/components/prompt/mcp"
 )
 
 func main() {

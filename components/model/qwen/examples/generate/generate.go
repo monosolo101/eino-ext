@@ -24,7 +24,7 @@ import (
 
 	"github.com/cloudwego/eino/schema"
 
-	"github.com/cloudwego/eino-ext/components/model/qwen"
+	"github.com/monosolo101/eino-ext/components/model/qwen"
 )
 
 func main() {

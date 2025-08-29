@@ -17,8 +17,8 @@ github.com/cloudwego/base64x v0.1.5 h1:XPciSp1xaq2VCSt6lF0phncD4koWyULpl5bUxbfCy
 github.com/cloudwego/base64x v0.1.5/go.mod h1:0zlkT4Wn5C6NdauXdJRhSKRlJvmclQ1hhJgA0rcu/8w=
 github.com/cloudwego/eino v0.3.51 h1:emSaDu49v9EEJYOusL42Li/VL5QBSyBvhxO9ZcKPZvs=
 github.com/cloudwego/eino v0.3.51/go.mod h1:wUjz990apdsaOraOXdh6CdhVXq8DJsOvLsVlxNTcNfY=
-github.com/cloudwego/eino-ext/libs/acl/opentelemetry v0.0.0-20250225080340-5935633151d3 h1:p1hlOXmAj1yIhJl3JRvwP+9WtEhuOnn6H+lIXIMeDzU=
-github.com/cloudwego/eino-ext/libs/acl/opentelemetry v0.0.0-20250225080340-5935633151d3/go.mod h1:YeW4PJOQPzvjZWRnSXotbllWZaIu3drWRzRTpELoc80=
+github.com/monosolo101/eino-ext/libs/acl/opentelemetry v0.0.0-20250225080340-5935633151d3 h1:p1hlOXmAj1yIhJl3JRvwP+9WtEhuOnn6H+lIXIMeDzU=
+github.com/monosolo101/eino-ext/libs/acl/opentelemetry v0.0.0-20250225080340-5935633151d3/go.mod h1:YeW4PJOQPzvjZWRnSXotbllWZaIu3drWRzRTpELoc80=
 github.com/cloudwego/iasm v0.2.0/go.mod h1:8rXZaNYT2n95jn+zTI1sDr+IgcD2GVs0nlbbQPiEFhY=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

@@ -26,7 +26,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	callbacksHelper "github.com/cloudwego/eino/utils/callbacks"
 
-	"github.com/cloudwego/eino-ext/components/document/loader/file"
+	"github.com/monosolo101/eino-ext/components/document/loader/file"
 )
 
 func main() {

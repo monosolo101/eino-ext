@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/indexer/milvus
+module github.com/monosolo101/eino-ext/components/indexer/milvus
 
 go 1.23.0
 

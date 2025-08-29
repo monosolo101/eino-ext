@@ -21,12 +21,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudwego/eino-ext/callbacks/cozeloop/internal/async"
-	"github.com/cloudwego/eino-ext/callbacks/cozeloop/internal/consts"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/schema"
 	"github.com/coze-dev/cozeloop-go"
 	"github.com/coze-dev/cozeloop-go/spec/tracespec"
+	"github.com/monosolo101/eino-ext/callbacks/cozeloop/internal/async"
+	"github.com/monosolo101/eino-ext/callbacks/cozeloop/internal/consts"
 )
 
 func newTraceCallbackHandler(client cozeloop.Client, o *options) callbacks.Handler {

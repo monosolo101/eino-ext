@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	. "github.com/bytedance/mockey"
-	"github.com/cloudwego/eino-ext/components/retriever/es8"
+	"github.com/monosolo101/eino-ext/components/retriever/es8"
 	"github.com/smartystreets/goconvey/convey"
 )
 

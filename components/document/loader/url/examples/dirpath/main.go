@@ -22,8 +22,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/cloudwego/eino-ext/components/document/loader/url"
 	"github.com/cloudwego/eino/components/document"
+	"github.com/monosolo101/eino-ext/components/document/loader/url"
 )
 
 // url loader can load file from dir path, because you can implement the Client

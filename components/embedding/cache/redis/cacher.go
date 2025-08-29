@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/embedding/cache"
+	"github.com/monosolo101/eino-ext/components/embedding/cache"
 	"github.com/redis/go-redis/v9"
 )
 

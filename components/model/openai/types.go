@@ -17,7 +17,7 @@
 package openai
 
 import (
-	"github.com/cloudwego/eino-ext/libs/acl/openai"
+	"github.com/monosolo101/eino-ext/libs/acl/openai"
 )
 
 type ReasoningEffortLevel openai.ReasoningEffortLevel

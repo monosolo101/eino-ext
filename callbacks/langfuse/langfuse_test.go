@@ -24,14 +24,14 @@ import (
 	"testing"
 
 	"github.com/bytedance/mockey"
-	"github.com/cloudwego/eino-ext/libs/acl/langfuse"
-	"github.com/cloudwego/eino-ext/libs/acl/langfuse/mock"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/components"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
 	"github.com/golang/mock/gomock"
+	"github.com/monosolo101/eino-ext/libs/acl/langfuse"
+	"github.com/monosolo101/eino-ext/libs/acl/langfuse/mock"
 	"github.com/stretchr/testify/assert"
 )
 

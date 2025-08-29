@@ -13,7 +13,7 @@ This is **not recommended for production** use. The DuckDuckGO tool doesn't use 
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2
+go get github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2
 ```
 
 ## Quick Start
@@ -25,7 +25,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2"
+	"github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2"
 	"github.com/cloudwego/eino/components/tool"
 )
 
@@ -61,20 +61,20 @@ type Config struct {
     // ToolDesc is the description of the tool
     // Default: search web for information by duckduckgo
     ToolDesc string `json:"tool_desc"`
-    
+
     // Timeout specifies the maximum duration for a single request.
     // Default: 30 seconds
     Timeout time.Duration
-    
+
     // HTTPClient specifies the client to send HTTP requests.
     // If HTTPClient is set, Timeout will not be used.
     // Optional. Default &http.Client{Timeout: Timeout}
     HTTPClient *http.Client `json:"http_client"`
-    
+
     // MaxResults limits the number of results returned
     // Default: 10
     MaxResults int `json:"max_results"`
-    
+
     // Region is the geographical region for results
     // Default: RegionWT, means all regions
     // Reference: https://duckduckgo.com/duckduckgo-help-pages/settings/params
@@ -85,6 +85,7 @@ type Config struct {
 ## Search
 
 ### Request Schema
+
 ```go
 type TextSearchRequest struct {
 	// Query is the user's search query
@@ -96,6 +97,7 @@ type TextSearchRequest struct {
 ```
 
 ### Response Schema
+
 ```go
 type TextSearchResponse struct {
     // Message is a brief status message for the model

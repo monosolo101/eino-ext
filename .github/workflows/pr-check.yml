@@ -1,6 +1,6 @@
 name: Pull Request Check
 
-on: [ pull_request ]
+on: [pull_request]
 
 jobs:
   compliant:
@@ -24,7 +24,7 @@ jobs:
         run: |-
           # Fetch the main branch
           git fetch origin main
-          
+
           # Find only newly added directories containing go.mod compared to main branch
           ADDED_DIRS=$(git diff --diff-filter=A --name-only origin/main...HEAD | grep "go.mod" | xargs -L1 dirname || true)
           echo "Newly added directories (compared to main): $ADDED_DIRS"
@@ -39,17 +39,17 @@ jobs:
               echo "Skipping $dir as its parent directory already has go.mod"
             fi
           done
-          
+
           # Check if README.md exists in each filtered directory
           for dir in "${FILTERED_DIRS[@]}"; do
             if [ ! -f "$dir/README.md" ]; then
               echo "Error: README.md not found in newly added module directory: $dir"
               echo "Please add a [README.md] file to the directory."
-              echo "📢 You can refer to the following example: https://github.com/cloudwego/eino-ext/blob/main/components/tool/duckduckgo/README.md"
+              echo "📢 You can refer to the following example: https://github.com/monosolo101/eino-ext/blob/main/components/tool/duckduckgo/README.md"
               exit 1
             fi
           done
-          
+
           if [ -n "${FILTERED_DIRS[@]}" ]; then
             echo "All filtered newly added go.mod directories have README.md files ✓"
           else

@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/tool/sequentialthinking
+module github.com/monosolo101/eino-ext/components/tool/sequentialthinking
 
 go 1.23.0
 

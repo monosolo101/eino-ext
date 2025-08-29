@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/callbacks/cozeloop
+module github.com/monosolo101/eino-ext/callbacks/cozeloop
 
 go 1.23.0
 

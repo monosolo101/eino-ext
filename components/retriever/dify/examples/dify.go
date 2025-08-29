@@ -22,7 +22,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/retriever/dify"
+	"github.com/monosolo101/eino-ext/components/retriever/dify"
 )
 
 // dify 的文档参考 https://docs.dify.ai/zh-hans/guides/knowledge-base/knowledge-and-documents-maintenance/maintain-dataset-via-api

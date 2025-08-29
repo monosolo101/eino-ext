@@ -23,12 +23,12 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/cloudwego/eino-ext/components/document/parser/html"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/components"
 	"github.com/cloudwego/eino/components/document"
 	"github.com/cloudwego/eino/components/document/parser"
 	"github.com/cloudwego/eino/schema"
+	"github.com/monosolo101/eino-ext/components/document/parser/html"
 )
 
 var _ document.Loader = (*Loader)(nil)

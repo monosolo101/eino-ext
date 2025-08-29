@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/duckduckgo/ddgsearch"
+	"github.com/monosolo101/eino-ext/components/tool/duckduckgo/ddgsearch"
 
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/components/tool/utils"

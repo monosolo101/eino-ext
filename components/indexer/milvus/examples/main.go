@@ -26,7 +26,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
 
-	"github.com/cloudwego/eino-ext/components/indexer/milvus"
+	"github.com/monosolo101/eino-ext/components/indexer/milvus"
 )
 
 func main() {

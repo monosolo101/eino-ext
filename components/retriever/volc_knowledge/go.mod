@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/retriever/volc_knowledge
+module github.com/monosolo101/eino-ext/components/retriever/volc_knowledge
 
 go 1.23.0
 

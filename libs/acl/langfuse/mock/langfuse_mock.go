@@ -23,8 +23,8 @@ package mock
 import (
 	reflect "reflect"
 
-	langfuse "github.com/cloudwego/eino-ext/libs/acl/langfuse"
 	gomock "github.com/golang/mock/gomock"
+	langfuse "github.com/monosolo101/eino-ext/libs/acl/langfuse"
 )
 
 // MockLangfuse is a mock of Langfuse interface.

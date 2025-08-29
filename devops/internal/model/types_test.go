@@ -21,8 +21,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cloudwego/eino-ext/devops/internal/utils/generic"
 	"github.com/cloudwego/eino/schema"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/generic"
 )
 
 type Custom struct {

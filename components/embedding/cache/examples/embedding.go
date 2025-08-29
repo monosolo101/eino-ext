@@ -21,9 +21,9 @@ import (
 	"crypto/md5"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/embedding/cache"
-	cacheredis "github.com/cloudwego/eino-ext/components/embedding/cache/redis"
 	"github.com/cloudwego/eino/components/embedding"
+	"github.com/monosolo101/eino-ext/components/embedding/cache"
+	cacheredis "github.com/monosolo101/eino-ext/components/embedding/cache/redis"
 	"github.com/redis/go-redis/v9"
 )
 

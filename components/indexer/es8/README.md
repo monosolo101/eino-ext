@@ -17,7 +17,7 @@ An Elasticsearch 8.x indexer implementation for [Eino](https://github.com/cloudw
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/indexer/es8@latest
+go get github.com/monosolo101/eino-ext/components/indexer/es8@latest
 ```
 
 ## Quick Start
@@ -30,7 +30,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	"github.com/elastic/go-elasticsearch/v8"
 
-	"github.com/cloudwego/eino-ext/components/indexer/es8"
+	"github.com/monosolo101/eino-ext/components/indexer/es8"
 )
 
 const (
@@ -103,10 +103,10 @@ type IndexerConfig struct {
     Client *elasticsearch.Client // Required: Elasticsearch client instance
     Index  string                // Required: Index name to store documents
     BatchSize int                // Optional: Max texts size for embedding (default: 5)
-    
+
     // Required: Function to map Document fields to Elasticsearch fields
     DocumentToFields func(ctx context.Context, doc *schema.Document) (map[string]FieldValue, error)
-    
+
     // Optional: Required only if vectorization is needed
     Embedding embedding.Embedder
 }

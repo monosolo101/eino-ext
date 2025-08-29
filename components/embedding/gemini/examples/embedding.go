@@ -20,7 +20,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/embedding/gemini"
+	"github.com/monosolo101/eino-ext/components/embedding/gemini"
 	"google.golang.org/genai"
 )
 

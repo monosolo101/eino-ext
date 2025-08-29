@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/model/arkbot
+module github.com/monosolo101/eino-ext/components/model/arkbot
 
 go 1.23.0
 

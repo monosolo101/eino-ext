@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/eino-ext/devops/internal/utils/log"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/log"
 )
 
 func TestStreamLog(t *testing.T) {

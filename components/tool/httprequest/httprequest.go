@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cloudwego/eino-ext/components/tool/httprequest/delete"
-	"github.com/cloudwego/eino-ext/components/tool/httprequest/get"
-	"github.com/cloudwego/eino-ext/components/tool/httprequest/post"
-	"github.com/cloudwego/eino-ext/components/tool/httprequest/put"
+	"github.com/monosolo101/eino-ext/components/tool/httprequest/delete"
+	"github.com/monosolo101/eino-ext/components/tool/httprequest/get"
+	"github.com/monosolo101/eino-ext/components/tool/httprequest/post"
+	"github.com/monosolo101/eino-ext/components/tool/httprequest/put"
 
 	"github.com/cloudwego/eino/components/tool"
 )

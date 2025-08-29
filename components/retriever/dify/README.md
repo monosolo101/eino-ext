@@ -14,7 +14,7 @@ A Dify retriever implementation for [Eino](https://github.com/cloudwego/eino) th
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/retriever/dify
+go get github.com/monosolo101/eino-ext/components/retriever/dify
 ```
 
 ## Quick Start
@@ -28,7 +28,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/retriever/dify"
+	"github.com/monosolo101/eino-ext/components/retriever/dify"
 )
 
 
@@ -73,7 +73,7 @@ type RetrieverConfig struct {
     APIKey string   // Dify Datasets API key
     Endpoint string // Endpoint of the Dify API, default: https://api.dify.ai/v1
     DatasetID string    // DatasetID of the Dify datasets
-    RetrievalModel *RetrievalModel  // Retrieval model configuration 
+    RetrievalModel *RetrievalModel  // Retrieval model configuration
     Timeout time.Duration   // HTTP connection timeout
 }
 

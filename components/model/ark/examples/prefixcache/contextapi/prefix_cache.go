@@ -25,7 +25,7 @@ import (
 
 	"github.com/cloudwego/eino/schema"
 
-	"github.com/cloudwego/eino-ext/components/model/ark"
+	"github.com/monosolo101/eino-ext/components/model/ark"
 )
 
 func main() {

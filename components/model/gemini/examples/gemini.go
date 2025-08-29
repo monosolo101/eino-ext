@@ -27,7 +27,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	"google.golang.org/genai"
 
-	"github.com/cloudwego/eino-ext/components/model/gemini"
+	"github.com/monosolo101/eino-ext/components/model/gemini"
 )
 
 func main() {

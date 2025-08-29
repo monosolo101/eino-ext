@@ -18,7 +18,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/searxng
+go get github.com/monosolo101/eino-ext/components/tool/searxng
 ```
 
 ## 快速开始
@@ -31,7 +31,7 @@ import (
     "log"
     "time"
 
-    "github.com/cloudwego/eino-ext/components/tool/searxng"
+    "github.com/monosolo101/eino-ext/components/tool/searxng"
     "github.com/cloudwego/eino/components/tool"
 )
 
@@ -121,6 +121,7 @@ searchTool, err := searxng.BuildSearchInvokeTool(cfg)
 ## 搜索
 
 ### 请求 Schema
+
 ```go
 type SearchRequest struct {
     Query  string `json:"query"` // 搜索查询（必需）
@@ -136,6 +137,7 @@ type SearchRequestConfig struct {
 ```
 
 #### 支持的语言
+
 - `all` - 所有语言（默认）
 - `en` - 英语
 - `zh` - 中文（简体）
@@ -155,17 +157,19 @@ type SearchRequestConfig struct {
 - `tr` - 土耳其语
 
 #### 支持的搜索引擎
+
 - `google` - Google 搜索
 - `duckduckgo` - DuckDuckGo
 - `baidu` - 百度（中文搜索引擎）
 - `bing` - 微软必应
-- `360search` - 360搜索（中文）
+- `360search` - 360 搜索（中文）
 - `yahoo` - 雅虎搜索
 - `quark` - 夸克搜索
 
 你可以通过逗号分隔指定多个引擎，例如：`"google,duckduckgo,bing"`
 
 ### 响应 Schema
+
 ```go
 type SearchResponse struct {
     Query           string          `json:"query"`             // 搜索查询
@@ -184,6 +188,7 @@ type SearchResult struct {
 ## 使用示例
 
 ### 基础搜索
+
 ```go
 ctx := context.Background()
 request := &searxng.SearchRequest{
@@ -204,6 +209,7 @@ for _, result := range response.Results {
 ```
 
 ### 带过滤器的高级搜索
+
 ```go
 // 创建请求配置
 requestConfig := &searxng.SearchRequestConfig{
@@ -238,6 +244,7 @@ response, err := client.Search(ctx, request)
 ```
 
 ### 英文搜索示例
+
 ```go
 // 创建英文搜索的请求配置
 requestConfig := &searxng.SearchRequestConfig{
@@ -263,8 +270,6 @@ request := &searxng.SearchRequest{
 response, err := client.Search(ctx, request)
 // 处理响应...
 ```
-
-
 
 ## 错误处理
 

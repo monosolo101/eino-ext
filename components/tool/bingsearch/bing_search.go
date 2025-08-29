@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/bingsearch/internal/bingcore"
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/components/tool/utils"
+	"github.com/monosolo101/eino-ext/components/tool/bingsearch/internal/bingcore"
 )
 
 type Region string

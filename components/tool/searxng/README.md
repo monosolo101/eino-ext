@@ -18,7 +18,7 @@ A SearXNG search tool implementation for [Eino](https://github.com/cloudwego/ein
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/searxng
+go get github.com/monosolo101/eino-ext/components/tool/searxng
 ```
 
 ## Quick Start
@@ -31,7 +31,7 @@ import (
     "log"
     "time"
 
-    "github.com/cloudwego/eino-ext/components/tool/searxng"
+    "github.com/monosolo101/eino-ext/components/tool/searxng"
     "github.com/cloudwego/eino/components/tool"
 )
 
@@ -117,9 +117,11 @@ cfg := &searxng.ClientConfig{
 
 searchTool, err := searxng.BuildSearchInvokeTool(cfg)
 ```
+
 ## Search
 
 ### Request Schema
+
 ```go
 type SearchRequest struct {
     Query  string `json:"query"` // The search query (required)
@@ -135,6 +137,7 @@ type SearchRequestConfig struct {
 ```
 
 #### Supported Languages
+
 - `all` - All languages (default)
 - `en` - English
 - `zh` - Chinese (simplified)
@@ -154,6 +157,7 @@ type SearchRequestConfig struct {
 - `tr` - Turkish
 
 #### Supported Search Engines
+
 - `google` - Google Search
 - `duckduckgo` - DuckDuckGo
 - `baidu` - Baidu (Chinese search engine)
@@ -165,6 +169,7 @@ type SearchRequestConfig struct {
 You can specify multiple engines by separating them with commas, e.g., `"google,duckduckgo,bing"`
 
 ### Response Schema
+
 ```go
 type SearchResponse struct {
     Query           string          `json:"query"`             // The search query
@@ -183,6 +188,7 @@ type SearchResult struct {
 ## Usage Examples
 
 ### Basic Search
+
 ```go
 ctx := context.Background()
 request := &searxng.SearchRequest{
@@ -197,12 +203,13 @@ if err != nil {
 }
 
 for _, result := range response.Results {
-    fmt.Printf("Title: %s\nURL: %s\nContent: %s\nEngine: %s\n\n", 
+    fmt.Printf("Title: %s\nURL: %s\nContent: %s\nEngine: %s\n\n",
         result.Title, result.URL, result.Content, result.Engine)
 }
 ```
 
 ### Advanced Search with Filters
+
 ```go
 // Create request config
 requestConfig := &searxng.SearchRequestConfig{
@@ -237,6 +244,7 @@ response, err := client.Search(ctx, request)
 ```
 
 ### Chinese Search Example
+
 ```go
 // Create request config for Chinese search
 requestConfig := &searxng.SearchRequestConfig{
@@ -262,8 +270,6 @@ request := &searxng.SearchRequest{
 response, err := client.Search(ctx, request)
 // Handle response...
 ```
-
-
 
 ## Error Handling
 

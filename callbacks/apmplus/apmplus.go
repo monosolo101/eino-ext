@@ -27,12 +27,12 @@ import (
 	"time"
 
 	"github.com/bytedance/sonic"
-	"github.com/cloudwego/eino-ext/libs/acl/opentelemetry"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/components"
 	"github.com/cloudwego/eino/components/embedding"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/schema"
+	"github.com/monosolo101/eino-ext/libs/acl/opentelemetry"
 	runtimemetrics "go.opentelemetry.io/contrib/instrumentation/runtime"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
@@ -40,7 +40,7 @@ import (
 	"go.opentelemetry.io/otel/trace"
 )
 
-const scopeName = "github.com/cloudwego/eino-ext/callbacks/apmplus"
+const scopeName = "github.com/monosolo101/eino-ext/callbacks/apmplus"
 
 type Config struct {
 	// Host is the Apmplus URL (Required)
@@ -233,7 +233,7 @@ func (a *apmplusHandler) OnStart(ctx context.Context, info *callbacks.RunInfo, i
 	contentReady := false
 
 	//TODO: covert input from other type of component
-	//ref: https://github.com/cloudwego/eino-ext/pull/103#discussion_r1967017732
+	//ref: https://github.com/monosolo101/eino-ext/pull/103#discussion_r1967017732
 	config, inMessage, _, err := extractModelInput(convModelCallbackInput([]callbacks.CallbackInput{input}))
 	if err != nil {
 		log.Printf("extract stream model input error: %v, runinfo: %+v", err, info)

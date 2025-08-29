@@ -14,7 +14,7 @@ It requires the milvus-sdk-go client of version 2.4.x
 
 ```bash
 go get github.com/milvus-io/milvus-sdk-go/v2@2.4.2
-go get github.com/cloudwego/eino-ext/components/indexer/milvus@latest
+go get github.com/monosolo101/eino-ext/components/indexer/milvus@latest
 ```
 
 ### Create the Milvus Indexer
@@ -26,12 +26,12 @@ import (
 	"context"
 	"log"
 	"os"
-	
-	"github.com/cloudwego/eino-ext/components/embedding/ark"
+
+	"github.com/monosolo101/eino-ext/components/embedding/ark"
 	"github.com/cloudwego/eino/schema"
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
-	
-	"github.com/cloudwego/eino-ext/components/indexer/milvus"
+
+	"github.com/monosolo101/eino-ext/components/indexer/milvus"
 )
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 	password := os.Getenv("MILVUS_PASSWORD")
 	arkApiKey := os.Getenv("ARK_API_KEY")
 	arkModel := os.Getenv("ARK_MODEL")
-	
+
 	// Create a client
 	ctx := context.Background()
 	cli, err := client.NewClient(ctx, client.Config{
@@ -54,7 +54,7 @@ func main() {
 		return
 	}
 	defer cli.Close()
-	
+
 	// Create an embedding model
 	emb, err := ark.NewEmbedder(ctx, &ark.EmbeddingConfig{
 		APIKey: arkApiKey,
@@ -64,7 +64,7 @@ func main() {
 		log.Fatalf("Failed to create embedding: %v", err)
 		return
 	}
-	
+
 	// Create an indexer
 	indexer, err := milvus.NewIndexer(ctx, &milvus.IndexerConfig{
 		Client:    cli,
@@ -75,7 +75,7 @@ func main() {
 		return
 	}
 	log.Printf("Indexer created success")
-	
+
 	// Store documents
 	docs := []*schema.Document{
 		{
@@ -152,7 +152,7 @@ type IndexerConfig struct {
 ## Default Collection Schema
 
 | Field    | Type           | DataBase Type | Index Type                 | Description             | Remark             |
-|----------|----------------|---------------|----------------------------|-------------------------|--------------------|
+| -------- | -------------- | ------------- | -------------------------- | ----------------------- | ------------------ |
 | id       | string         | varchar       |                            | Document ID             | Max Length: 255    |
 | content  | string         | varchar       |                            | Document content        | Max Length: 1024   |
 | vector   | []byte         | binary array  | HAMMING(default) / JACCARD | Document content vector | Default Dim: 81920 |

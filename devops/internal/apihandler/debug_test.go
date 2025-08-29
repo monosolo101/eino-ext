@@ -29,11 +29,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"go.uber.org/mock/gomock"
 
-	"github.com/cloudwego/eino-ext/devops/internal/apihandler/types"
-	"github.com/cloudwego/eino-ext/devops/internal/mock"
-	"github.com/cloudwego/eino-ext/devops/internal/model"
-	"github.com/cloudwego/eino-ext/devops/internal/service"
-	devmodel "github.com/cloudwego/eino-ext/devops/model"
+	"github.com/monosolo101/eino-ext/devops/internal/apihandler/types"
+	"github.com/monosolo101/eino-ext/devops/internal/mock"
+	"github.com/monosolo101/eino-ext/devops/internal/model"
+	"github.com/monosolo101/eino-ext/devops/internal/service"
+	devmodel "github.com/monosolo101/eino-ext/devops/model"
 )
 
 type debugTestSuite struct {

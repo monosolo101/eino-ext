@@ -13,7 +13,7 @@ A Bing search tool implementation for [Eino](https://github.com/cloudwego/eino) 
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/bingsearch
+go get github.com/monosolo101/eino-ext/components/tool/bingsearch
 ```
 
 ## Quick Start
@@ -26,24 +26,24 @@ import (
 	"log"
 	"os"
 	"time"
-	
+
 	"github.com/bytedance/sonic"
-	"github.com/cloudwego/eino-ext/components/tool/bingsearch"
+	"github.com/monosolo101/eino-ext/components/tool/bingsearch"
 )
 
 func main() {
 	// Set the Bing Search API key
 	bingSearchAPIKey := os.Getenv("BING_SEARCH_API_KEY")
-	
+
 	// Create a context
 	ctx := context.Background()
-	
+
 	// Create the Bing Search tool
 	bingSearchTool, err := bingsearch.NewTool(ctx, &bingsearch.Config{
 		APIKey: bingSearchAPIKey,
 		Cache:  5 * time.Minute,
 	})
-	
+
 	if err != nil {
 		log.Fatalf("Failed to create tool: %v", err)
 	}
@@ -77,6 +77,7 @@ MaxRetries int               `json:"max_retries"` // optional, default: 3
 ## Search
 
 ### Request Schema
+
 ```go
 type SearchRequest struct {
     Query  string `json:"query" jsonschema:"description=The query to search the web for"`
@@ -85,6 +86,7 @@ type SearchRequest struct {
 ```
 
 ### Response Schema
+
 ```go
 type SearchResponse struct {
     Results []*searchResult `json:"results" jsonschema:"description=The results of the search"`

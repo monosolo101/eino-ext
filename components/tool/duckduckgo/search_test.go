@@ -25,7 +25,7 @@ import (
 	"github.com/bytedance/mockey"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cloudwego/eino-ext/components/tool/duckduckgo/ddgsearch"
+	"github.com/monosolo101/eino-ext/components/tool/duckduckgo/ddgsearch"
 )
 
 func MockDDGS() *mockey.Mocker {

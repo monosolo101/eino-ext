@@ -7,6 +7,7 @@
 ## 为什么选择 DuckDuckGo？
 
 DuckDuckGo 提供了以下优势：
+
 - **无需认证**：与其他搜索引擎不同，DuckDuckGo 的 API 无需任何 API 密钥或认证
 - 注重隐私的搜索结果
 - 合理使用范围内无速率限制
@@ -30,7 +31,7 @@ DuckDuckGo 提供了以下优势：
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/duckduckgo
+go get github.com/monosolo101/eino-ext/components/tool/duckduckgo
 ```
 
 ## 快速开始
@@ -44,7 +45,7 @@ import (
     "log"
     "time"
 
-    "github.com/cloudwego/eino-ext/components/tool/duckduckgo/ddgsearch"
+    "github.com/monosolo101/eino-ext/components/tool/duckduckgo/ddgsearch"
 )
 
 func main() {
@@ -76,7 +77,7 @@ func main() {
 
     // 打印结果
     for i, result := range response.Results {
-        fmt.Printf("%d. %s\n   URL: %s\n   Description: %s\n\n", 
+        fmt.Printf("%d. %s\n   URL: %s\n   Description: %s\n\n",
             i+1, result.Title, result.URL, result.Description)
     }
 }
@@ -100,7 +101,7 @@ cfg := &ddgsearch.Config{
 client, err := ddgsearch.New(cfg)
 ```
 
-### 搜索参���
+### 搜索参 ���
 
 ```go
 params := &ddgsearch.SearchParams{
@@ -113,6 +114,7 @@ params := &ddgsearch.SearchParams{
 ```
 
 可用地区：
+
 - RegionUS（美国）
 - RegionUK（英国）
 - RegionDE（德国）
@@ -122,11 +124,13 @@ params := &ddgsearch.SearchParams{
 - RegionRU（俄罗斯）
 
 安全搜索级别：
+
 - SafeSearchStrict（严格）
 - SafeSearchModerate（适中）
 - SafeSearchOff（关闭）
 
 时间范围选项：
+
 - TimeRangeDay（天）
 - TimeRangeWeek（周）
 - TimeRangeMonth（月）
@@ -146,4 +150,4 @@ cfg := &ddgsearch.Config{
     Proxy: "socks5://proxy:1080",
 }
 client, err := ddgsearch.New(cfg)
-``` 
+```

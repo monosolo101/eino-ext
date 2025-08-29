@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/document/transformer/splitter/html
+module github.com/monosolo101/eino-ext/components/document/transformer/splitter/html
 
 go 1.23.0
 

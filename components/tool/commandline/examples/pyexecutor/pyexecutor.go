@@ -20,8 +20,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/tool/commandline"
-	"github.com/cloudwego/eino-ext/components/tool/commandline/sandbox"
+	"github.com/monosolo101/eino-ext/components/tool/commandline"
+	"github.com/monosolo101/eino-ext/components/tool/commandline/sandbox"
 )
 
 func main() {

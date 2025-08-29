@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/indexer/es8
+module github.com/monosolo101/eino-ext/components/indexer/es8
 
 go 1.23.0
 

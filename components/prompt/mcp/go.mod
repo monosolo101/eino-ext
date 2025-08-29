@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/prompt/mcp
+module github.com/monosolo101/eino-ext/components/prompt/mcp
 
 go 1.23.0
 

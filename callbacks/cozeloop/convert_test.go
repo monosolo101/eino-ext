@@ -23,12 +23,12 @@ import (
 
 	"github.com/bytedance/mockey"
 	"github.com/bytedance/sonic"
-	"github.com/cloudwego/eino-ext/callbacks/cozeloop/internal/consts"
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/components/prompt"
 	"github.com/cloudwego/eino/components/retriever"
 	"github.com/cloudwego/eino/schema"
 	"github.com/coze-dev/cozeloop-go/spec/tracespec"
+	"github.com/monosolo101/eino-ext/callbacks/cozeloop/internal/consts"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

@@ -19,10 +19,10 @@ package apihandler
 import (
 	"net/http"
 
-	"github.com/cloudwego/eino-ext/devops/internal/apihandler/types"
-	"github.com/cloudwego/eino-ext/devops/internal/service"
-	"github.com/cloudwego/eino-ext/devops/internal/utils/log"
-	"github.com/cloudwego/eino-ext/devops/internal/utils/safego"
+	"github.com/monosolo101/eino-ext/devops/internal/apihandler/types"
+	"github.com/monosolo101/eino-ext/devops/internal/service"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/log"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/safego"
 )
 
 // Ping test ping.

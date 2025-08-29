@@ -22,8 +22,8 @@ import (
 	"io"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/model/qianfan"
 	"github.com/cloudwego/eino/schema"
+	"github.com/monosolo101/eino-ext/components/model/qianfan"
 )
 
 func main() {

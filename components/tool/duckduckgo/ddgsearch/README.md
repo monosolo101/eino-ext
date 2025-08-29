@@ -7,6 +7,7 @@ A native Go library for DuckDuckGo search functionality. This library provides a
 ## Why DuckDuckGo?
 
 DuckDuckGo offers several advantages:
+
 - **No Authentication Required**: Unlike other search engines, DuckDuckGo's API can be used without any API keys or authentication
 - Privacy-focused search results
 - No rate limiting for reasonable usage
@@ -30,7 +31,7 @@ DuckDuckGo offers several advantages:
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/duckduckgo
+go get github.com/monosolo101/eino-ext/components/tool/duckduckgo
 ```
 
 ## Quick Start
@@ -44,7 +45,7 @@ import (
     "log"
     "time"
 
-    "github.com/cloudwego/eino-ext/components/tool/duckduckgo/ddgsearch"
+    "github.com/monosolo101/eino-ext/components/tool/duckduckgo/ddgsearch"
 )
 
 func main() {
@@ -76,7 +77,7 @@ func main() {
 
     // Print results
     for i, result := range response.Results {
-        fmt.Printf("%d. %s\n   URL: %s\n   Description: %s\n\n", 
+        fmt.Printf("%d. %s\n   URL: %s\n   Description: %s\n\n",
             i+1, result.Title, result.URL, result.Description)
     }
 }
@@ -113,6 +114,7 @@ params := &ddgsearch.SearchParams{
 ```
 
 Available regions:
+
 - RegionUS (United States)
 - RegionUK (United Kingdom)
 - RegionDE (Germany)
@@ -122,11 +124,13 @@ Available regions:
 - RegionRU (Russia)
 
 Safe search levels:
+
 - SafeSearchStrict
 - SafeSearchModerate
 - SafeSearchOff
 
 Time range options:
+
 - TimeRangeDay
 - TimeRangeWeek
 - TimeRangeMonth

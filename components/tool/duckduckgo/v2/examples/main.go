@@ -23,7 +23,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/duckduckgo/v2"
+	"github.com/monosolo101/eino-ext/components/tool/duckduckgo/v2"
 )
 
 func main() {

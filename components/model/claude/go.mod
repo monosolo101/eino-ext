@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/model/claude
+module github.com/monosolo101/eino-ext/components/model/claude
 
 go 1.23.0
 

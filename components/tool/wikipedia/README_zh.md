@@ -13,7 +13,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/wikipedia
+go get github.com/monosolo101/eino-ext/components/tool/wikipedia
 ```
 
 ## 快速开始
@@ -23,7 +23,7 @@ package main
 
 import (
 	"context"
-	"github.com/cloudwego/eino-ext/components/tool/wikipedia"
+	"github.com/monosolo101/eino-ext/components/tool/wikipedia"
 	"github.com/cloudwego/eino/components/tool"
 	"log"
 	"time"
@@ -66,35 +66,35 @@ type Config struct {
     // URL 语言依赖于您为 Language 字段设置的语言。
     // 可选。默认值: "https://en.wikipedia.org/w/api.php"。
     BaseURL string
-    
+
     // UserAgent 是 HTTP 客户端使用的用户代理。
     // 可选，但强烈建议覆盖默认值并使用您项目的相关信息。
     // 建议遵循 Wikipedia 的机器人规范：
     // https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
     // 可选。默认值: "eino (https://github.com/cloudwego/eino)"
     UserAgent string `json:"user_agent"`
-    
+
     // DocMaxChars 是返回页面内容的最大字符数。
     // 如果内容超过此值，将会被截断。
     // 可选。默认值: 15s。
     DocMaxChars int `json:"doc_max_chars"`
-    
+
     // Timeout 是 HTTP 客户端返回响应的最大等待时间。
     // 可选。默认值: 15s。
     Timeout time.Duration `json:"timeout"`
-    
+
     // TopK 是返回的搜索结果数量。
     // 可选。默认值: 3。
     TopK int `json:"top_k"`
-    
+
     // MaxRedirect 是最大允许的重定向次数。
     // 可选。默认值: 3。
     MaxRedirect int `json:"max_redirect"`
-    
+
     // Language 是用于 Wikipedia 搜索的语言。
     // 可选。默认值: "en"。
     Language string `json:"language"`
-	
+
     ToolName string `json:"tool_name"` // 可选。默认值: "wikipedia_search"。
     ToolDesc string `json:"tool_desc"` // 可选。默认值: "this tool provides quick and efficient access to information from the Wikipedia"。
 }
@@ -120,9 +120,9 @@ type SearchResponse struct {
     Results []*Result `json:"results" jsonschema:"description=The results of the search"`
 }
 type SearchResult struct {
-    // Title 是搜索结果的标题。 
+    // Title 是搜索结果的标题。
     Title   string `json:"title" jsonschema:"description=The title of the search result"`
-    // URL 是搜索结果的 URL。 
+    // URL 是搜索结果的 URL。
     URL     string `json:"url" jsonschema:"description=The url of the search result"`
     // Extract 是搜索结果的摘要。
     Extract string `json:"extract" jsonschema:"description=The extract of the search result"`

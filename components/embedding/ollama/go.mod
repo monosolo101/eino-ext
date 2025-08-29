@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/embedding/ollama
+module github.com/monosolo101/eino-ext/components/embedding/ollama
 
 go 1.24.0
 

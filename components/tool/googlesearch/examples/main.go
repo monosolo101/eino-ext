@@ -23,7 +23,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/tool/googlesearch"
+	"github.com/monosolo101/eino-ext/components/tool/googlesearch"
 )
 
 func main() {

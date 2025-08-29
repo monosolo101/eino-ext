@@ -26,7 +26,7 @@ import (
 
 	"github.com/cloudwego/eino/schema"
 
-	"github.com/cloudwego/eino-ext/components/model/arkbot"
+	"github.com/monosolo101/eino-ext/components/model/arkbot"
 )
 
 func main() {

@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/document/transformer/splitter/recursive"
+	"github.com/monosolo101/eino-ext/components/document/transformer/splitter/recursive"
 )
 
 func main() {

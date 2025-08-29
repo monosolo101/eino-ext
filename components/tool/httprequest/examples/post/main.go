@@ -22,7 +22,7 @@ import (
 	"log"
 
 	"github.com/bytedance/sonic"
-	post "github.com/cloudwego/eino-ext/components/tool/httprequest/post"
+	post "github.com/monosolo101/eino-ext/components/tool/httprequest/post"
 )
 
 func main() {

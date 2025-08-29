@@ -21,10 +21,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/matoous/go-nanoid"
+	gonanoid "github.com/matoous/go-nanoid"
 
-	"github.com/cloudwego/eino-ext/devops/internal/utils/generic"
-	devmodel "github.com/cloudwego/eino-ext/devops/model"
 	"github.com/cloudwego/eino/components"
 	"github.com/cloudwego/eino/components/document"
 	"github.com/cloudwego/eino/components/embedding"
@@ -33,6 +31,8 @@ import (
 	"github.com/cloudwego/eino/components/prompt"
 	"github.com/cloudwego/eino/components/retriever"
 	"github.com/cloudwego/eino/compose"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/generic"
+	devmodel "github.com/monosolo101/eino-ext/devops/model"
 )
 
 type GraphContainer struct {

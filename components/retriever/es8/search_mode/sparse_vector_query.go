@@ -20,10 +20,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cloudwego/eino-ext/components/retriever/es8"
 	"github.com/cloudwego/eino/components/retriever"
 	"github.com/elastic/go-elasticsearch/v8/typedapi/core/search"
 	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
+	"github.com/monosolo101/eino-ext/components/retriever/es8"
 )
 
 // SearchModeSparseVectorQuery executes a query consisting of sparse vectors.

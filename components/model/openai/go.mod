@@ -1,13 +1,13 @@
-module github.com/cloudwego/eino-ext/components/model/openai
+module github.com/monosolo101/eino-ext/components/model/openai
 
 go 1.18
 
 require (
 	github.com/bytedance/mockey v1.2.14
 	github.com/cloudwego/eino v0.4.7
-	github.com/cloudwego/eino-ext/libs/acl/openai v0.0.0-20250826113018-8c6f6358d4bb
 	github.com/eino-contrib/jsonschema v1.0.0
 	github.com/meguminnnnnnnnn/go-openai v0.0.0-20250821095446-07791bea23a0
+	github.com/monosolo101/eino-ext/libs/acl/openai v0.0.0-20250829161609-fcbe500f60fd
 	github.com/wk8/go-ordered-map/v2 v2.1.8
 )
 

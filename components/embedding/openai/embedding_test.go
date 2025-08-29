@@ -28,7 +28,7 @@ import (
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/components/embedding"
 
-	openai2 "github.com/cloudwego/eino-ext/libs/acl/openai"
+	openai2 "github.com/monosolo101/eino-ext/libs/acl/openai"
 )
 
 func TestEmbedding(t *testing.T) {

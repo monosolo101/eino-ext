@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/devops
+module github.com/monosolo101/eino-ext/devops
 
 go 1.18
 

@@ -24,8 +24,8 @@ import (
 	"net/url"
 	"time"
 
-	loader "github.com/cloudwego/eino-ext/components/document/loader/url"
 	"github.com/cloudwego/eino/components/document"
+	loader "github.com/monosolo101/eino-ext/components/document/loader/url"
 )
 
 // you can use any proxy in loader, because you can set your own client.

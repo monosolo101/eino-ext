@@ -22,7 +22,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/wikipedia/internal"
+	"github.com/monosolo101/eino-ext/components/tool/wikipedia/internal"
 
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/components/tool/utils"

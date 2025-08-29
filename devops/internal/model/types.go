@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/cloudwego/eino-ext/devops/internal/utils/generic"
-	"github.com/cloudwego/eino-ext/devops/model"
 	"github.com/cloudwego/eino/components/document"
 	"github.com/cloudwego/eino/schema"
+	"github.com/monosolo101/eino-ext/devops/internal/utils/generic"
+	"github.com/monosolo101/eino-ext/devops/model"
 )
 
 const (

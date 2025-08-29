@@ -14,7 +14,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/retriever/dify
+go get github.com/monosolo101/eino-ext/components/retriever/dify
 ```
 
 ## 快速开始
@@ -28,7 +28,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/retriever/dify"
+	"github.com/monosolo101/eino-ext/components/retriever/dify"
 )
 
 

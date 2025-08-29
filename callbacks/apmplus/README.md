@@ -13,7 +13,7 @@ A Volcengine APMPlus callback implementation for [Eino](https://github.com/cloud
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/callbacks/apmplus
+go get github.com/monosolo101/eino-ext/callbacks/apmplus
 ```
 
 ## Quick Start
@@ -25,7 +25,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/callbacks/apmplus"
+	"github.com/monosolo101/eino-ext/callbacks/apmplus"
 	"github.com/cloudwego/eino/callbacks"
 )
 
@@ -44,7 +44,7 @@ func main() {
 
 	// Set apmplus as a global callback
 	callbacks.AppendGlobalHandlers(cbh)
-	
+
 	g := NewGraph[string,string]()
 	/*
 	 * compose and run graph
@@ -57,7 +57,7 @@ func main() {
 	/*
 	 * Process the result
 	 */
-	 
+
 	// Exit after all trace and metrics reporting is complete
 	showdown(ctx)
 }
@@ -72,15 +72,15 @@ type Config struct {
     // Host is the Apmplus server URL (Required)
     // Example: "https://apmplus-cn-beijing.volces.com:4317"
     Host string
-    
+
     // AppKey is the key for authentication (Required)
     // Example: "abc..."
     AppKey string
-    
+
     // ServiceName is the name of service (Required)
     // Example: "my-app"
     ServiceName string
-    
+
     // Release is the version or release identifier (Optional)
     // Default: ""
     // Example: "v1.2.3"

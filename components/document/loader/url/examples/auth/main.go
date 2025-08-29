@@ -23,8 +23,8 @@ import (
 	"net/http"
 	"net/url"
 
-	loader "github.com/cloudwego/eino-ext/components/document/loader/url"
 	"github.com/cloudwego/eino/components/document"
+	loader "github.com/monosolo101/eino-ext/components/document/loader/url"
 )
 
 // you can build request by yourself, so you can add custom header、cookie、proxy、timeout etc.

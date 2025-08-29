@@ -24,7 +24,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/searxng"
+	"github.com/monosolo101/eino-ext/components/tool/searxng"
 )
 
 func main() {

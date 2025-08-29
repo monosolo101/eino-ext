@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/retriever/volc_vikingdb"
 	"github.com/cloudwego/eino/components/embedding"
+	"github.com/monosolo101/eino-ext/components/retriever/volc_vikingdb"
 )
 
 func main() {

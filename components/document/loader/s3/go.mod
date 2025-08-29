@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/document/loader/s3
+module github.com/monosolo101/eino-ext/components/document/loader/s3
 
 go 1.23.0
 

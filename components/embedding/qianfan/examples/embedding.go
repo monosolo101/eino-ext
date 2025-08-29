@@ -23,7 +23,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/embedding/qianfan"
+	"github.com/monosolo101/eino-ext/components/embedding/qianfan"
 )
 
 func main() {

@@ -24,7 +24,7 @@ import (
 	"github.com/bytedance/sonic"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cloudwego/eino-ext/components/tool/wikipedia/internal"
+	"github.com/monosolo101/eino-ext/components/tool/wikipedia/internal"
 )
 
 func TestNewTool(t *testing.T) {

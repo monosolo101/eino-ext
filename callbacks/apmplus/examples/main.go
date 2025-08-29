@@ -22,9 +22,9 @@ import (
 	"log"
 	"strings"
 
-	"github.com/cloudwego/eino-ext/callbacks/apmplus"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/compose"
+	"github.com/monosolo101/eino-ext/callbacks/apmplus"
 )
 
 func main() {

@@ -22,7 +22,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/browseruse"
+	"github.com/monosolo101/eino-ext/components/tool/browseruse"
 )
 
 func main() {

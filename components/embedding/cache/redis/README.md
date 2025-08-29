@@ -5,7 +5,7 @@ This directory contains the implementation of a Redis cacher for the cache embed
 ## Installation
 
 ```shell
-go get github.com/cloudwego/eino-ext/components/embedding/cache/redis
+go get github.com/monosolo101/eino-ext/components/embedding/cache/redis
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/redis/go-redis/v9"
-	cacheredis "github.com/cloudwego/eino-ext/components/embedding/cache/redis"
+	cacheredis "github.com/monosolo101/eino-ext/components/embedding/cache/redis"
 )
 
 func main() {

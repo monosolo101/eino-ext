@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"os"
 
-	rr "github.com/cloudwego/eino-ext/components/retriever/redis"
 	"github.com/cloudwego/eino/components/embedding"
+	rr "github.com/monosolo101/eino-ext/components/retriever/redis"
 	"github.com/redis/go-redis/v9"
 )
 
-// This example related to example in https://github.com/cloudwego/eino-ext/tree/main/components/indexer/redis/examples/default_indexer
+// This example related to example in https://github.com/monosolo101/eino-ext/tree/main/components/indexer/redis/examples/default_indexer
 
 func main() {
 	ctx := context.Background()

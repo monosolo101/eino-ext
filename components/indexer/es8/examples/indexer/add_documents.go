@@ -29,7 +29,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	"github.com/elastic/go-elasticsearch/v8"
 
-	"github.com/cloudwego/eino-ext/components/indexer/es8"
+	"github.com/monosolo101/eino-ext/components/indexer/es8"
 )
 
 const (

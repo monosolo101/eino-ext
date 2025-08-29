@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cloudwego/eino-ext/components/embedding/tencentcloud"
+	"github.com/monosolo101/eino-ext/components/embedding/tencentcloud"
 )
 
 func main() {

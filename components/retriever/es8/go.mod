@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/retriever/es8
+module github.com/monosolo101/eino-ext/components/retriever/es8
 
 go 1.23.0
 

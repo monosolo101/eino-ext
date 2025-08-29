@@ -1,6 +1,7 @@
 # BrowserUse Tool
 
 A BrowserUse Tool implementation for [Eino](https://github.com/cloudwego/eino) that implements the `Tool` interface. This enables seamless integration with Eino's LLM capabilities for enhanced natural language processing and generation.
+
 > **Note**: This implementation is inspired by and references the [OpenManus](https://github.com/mannaandpoem/OpenManus) project.
 
 ## Features
@@ -12,7 +13,7 @@ A BrowserUse Tool implementation for [Eino](https://github.com/cloudwego/eino) t
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/browseruse@latest
+go get github.com/monosolo101/eino-ext/components/tool/browseruse@latest
 ```
 
 ## Quick Start
@@ -28,7 +29,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/cloudwego/eino-ext/components/tool/browseruse"
+	"github.com/monosolo101/eino-ext/components/tool/browseruse"
 )
 
 func main() {

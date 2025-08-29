@@ -1,6 +1,7 @@
 # CommandLine Tool
 
 CommandLine Tools implementation for [Eino](https://github.com/cloudwego/eino) that implements the `Tool` interface. This enables seamless integration with Eino's LLM capabilities for enhanced natural language processing and generation.
+
 > **Note**: This implementation is inspired by and references the [OpenManus](https://github.com/mannaandpoem/OpenManus) project.
 
 ## Features
@@ -12,7 +13,7 @@ CommandLine Tools implementation for [Eino](https://github.com/cloudwego/eino) t
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/commandline@latest
+go get github.com/monosolo101/eino-ext/components/tool/commandline@latest
 ```
 
 ## Quick Start
@@ -20,6 +21,7 @@ go get github.com/cloudwego/eino-ext/components/tool/commandline@latest
 Here's a quick example of how to use the commandline tool:
 
 Editor:
+
 ```go
 package main
 
@@ -27,8 +29,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/tool/commandline"
-	"github.com/cloudwego/eino-ext/components/tool/commandline/sandbox"
+	"github.com/monosolo101/eino-ext/components/tool/commandline"
+	"github.com/monosolo101/eino-ext/components/tool/commandline/sandbox"
 )
 
 func main() {
@@ -80,7 +82,9 @@ func main() {
 	log.Println("view file result: ", result)
 }
 ```
+
 PyExecutor:
+
 ```go
 /*
  * Copyright 2025 CloudWeGo Authors
@@ -104,8 +108,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/components/tool/commandline"
-	"github.com/cloudwego/eino-ext/components/tool/commandline/sandbox"
+	"github.com/monosolo101/eino-ext/components/tool/commandline"
+	"github.com/monosolo101/eino-ext/components/tool/commandline/sandbox"
 )
 
 func main() {
@@ -141,7 +145,6 @@ func main() {
 	log.Println("result:\n", result)
 }
 ```
-
 
 ## For More Details
 

@@ -33,7 +33,7 @@ import (
 	"github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/schema"
 
-	protocol "github.com/cloudwego/eino-ext/libs/acl/openai"
+	protocol "github.com/monosolo101/eino-ext/libs/acl/openai"
 )
 
 func TestOpenAIGenerate(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/cloudwego/eino-ext/components/document/parser/html
+module github.com/monosolo101/eino-ext/components/document/parser/html
 
 go 1.23.0
 

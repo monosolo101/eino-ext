@@ -25,7 +25,7 @@ Sequential Thinking 工具旨在用于：
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/tool/sequentialthinking@latest
+go get github.com/monosolo101/eino-ext/components/tool/sequentialthinking@latest
 ```
 
 ## 快速开始
@@ -36,37 +36,37 @@ package main
 import (
 	"context"
 	"fmt"
-	
+
 	"github.com/bytedance/sonic"
-	
-	"github.com/cloudwego/eino-ext/components/tool/sequentialthinking"
+
+	"github.com/monosolo101/eino-ext/components/tool/sequentialthinking"
 )
 
 func main() {
 	ctx := context.Background()
-	
+
 	// Instantiate the tool
 	tool, err := sequentialthinking.NewTool()
 	if err != nil {
 		panic(err)
 	}
-	
+
 	args := &sequentialthinking.ThoughtRequest{
 		Thought:           "This is a test thought",
 		ThoughtNumber:     1,
 		TotalThoughts:     3,
 		NextThoughtNeeded: true,
 	}
-	
+
 	argsStr, _ := sonic.Marshal(args)
-	
+
 	// Use the tool
 	// (This is just a placeholder; actual usage will depend on the tool's functionality)
 	result, err := tool.InvokableRun(ctx, string(argsStr))
 	if err != nil {
 		panic(err)
 	}
-	
+
 	// Process the result
 	// (This is just a placeholder; actual processing will depend on the tool's output)
 	fmt.Println(result)

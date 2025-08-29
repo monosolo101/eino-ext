@@ -15,7 +15,7 @@ A Tencent Cloud Hunyuan embedding implementation for [Eino](https://github.com/c
 ## Installation
 
 ```bash
-go get github.com/cloudwego/eino-ext/components/embedding/tencentcloud
+go get github.com/monosolo101/eino-ext/components/embedding/tencentcloud
 ```
 
 ## Quick Start
@@ -27,13 +27,13 @@ import (
     "context"
     "fmt"
     "os"
-    
-    "github.com/cloudwego/eino-ext/components/embedding/tencentcloud"
+
+    "github.com/monosolo101/eino-ext/components/embedding/tencentcloud"
 )
 
 func main() {
     ctx := context.Background()
-    
+
     // Create embedder config
     cfg := &tencentcloud.EmbeddingConfig{
         SecretID:  os.Getenv("TENCENTCLOUD_SECRET_ID"),
@@ -78,12 +78,14 @@ The embedder automatically handles batch processing for large text arrays. Accor
 ### Token Usage Tracking
 
 The embedder tracks token usage through Eino's callback system. Token usage information includes:
+
 - Prompt tokens
 - Total tokens
 
 ### Callbacks Support
 
 The embedder fully supports Eino's callback system, enabling:
+
 - Error tracking
 - Start/End event monitoring
 - Token usage statistics

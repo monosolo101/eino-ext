@@ -26,9 +26,9 @@ package mock
 import (
 	reflect "reflect"
 
-	model "github.com/cloudwego/eino-ext/devops/internal/model"
-	model0 "github.com/cloudwego/eino-ext/devops/model"
 	compose "github.com/cloudwego/eino/compose"
+	model "github.com/monosolo101/eino-ext/devops/internal/model"
+	model0 "github.com/monosolo101/eino-ext/devops/model"
 	gomock "go.uber.org/mock/gomock"
 )
 

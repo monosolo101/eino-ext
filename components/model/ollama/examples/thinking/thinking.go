@@ -23,7 +23,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	ollamaapi "github.com/ollama/ollama/api"
 
-	"github.com/cloudwego/eino-ext/components/model/ollama"
+	"github.com/monosolo101/eino-ext/components/model/ollama"
 )
 
 func main() {

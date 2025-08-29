@@ -25,12 +25,12 @@ import (
 	"context"
 	"log"
 	"os"
-	
-	"github.com/cloudwego/eino-ext/components/embedding/ark"
+
+	"github.com/monosolo101/eino-ext/components/embedding/ark"
 	"github.com/cloudwego/eino/schema"
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
-	
-	"github.com/cloudwego/eino-ext/components/retriever/milvus"
+
+	"github.com/monosolo101/eino-ext/components/retriever/milvus"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 	password := os.Getenv("MILVUS_PASSWORD")
 	arkApiKey := os.Getenv("ARK_API_KEY")
 	arkModel := os.Getenv("ARK_MODEL")
-	
+
 	// Create a client
 	ctx := context.Background()
 	cli, err := client.NewClient(ctx, client.Config{
@@ -53,7 +53,7 @@ func main() {
 		return
 	}
 	defer cli.Close()
-	
+
 	// Create an embedding model
 	emb, err := ark.NewEmbedder(ctx, &ark.EmbeddingConfig{
 		APIKey: arkApiKey,
@@ -63,7 +63,7 @@ func main() {
 		log.Fatalf("Failed to create embedding: %v", err)
 		return
 	}
-	
+
 	// Create an indexer
 	indexer, err := milvus.NewIndexer(ctx, &milvus.IndexerConfig{
 		Client:    cli,
@@ -74,7 +74,7 @@ func main() {
 		return
 	}
 	log.Printf("Indexer created success")
-	
+
 	// Store documents
 	docs := []*schema.Document{
 		{
@@ -107,7 +107,7 @@ type IndexerConfig struct {
 	// Client 是要调用的 milvus 客户端
 	// 必需
 	Client client.Client
-	
+
 	// 默认集合配置
 	// Collection 是 milvus 数据库中的集合名称
 	// 可选，默认值为 "eino_collection"
@@ -132,16 +132,16 @@ type IndexerConfig struct {
 	// 可选，默认值为 false
 	// 启用动态模式可能会影响 milvus 性能
 	EnableDynamicSchema bool
-	
+
 	// DocumentConverter 是将 schema.Document 转换为行数据的函数
 	// 可选，默认值为 defaultDocumentConverter
 	DocumentConverter func(ctx context.Context, docs []*schema.Document, vectors [][]float64) ([]interface{}, error)
-	
+
 	// 向量列的索引配置
 	// MetricType 是向量的度量类型
 	// 可选，默认类型为 HAMMING
 	MetricType MetricType
-	
+
 	// Embedding 是从 schema.Document 的内容中嵌入值所需的向量化方法
 	// 必需
 	Embedding embedding.Embedder
@@ -150,12 +150,12 @@ type IndexerConfig struct {
 
 ## 默认数据模型
 
-| 字段       | 数据类型           | 字段类型         | 索引类型                       | 描述     | 备注          |
-|----------|----------------|--------------|----------------------------|--------|-------------|
+| 字段     | 数据类型       | 字段类型     | 索引类型                   | 描述         | 备注            |
+| -------- | -------------- | ------------ | -------------------------- | ------------ | --------------- |
 | id       | string         | varchar      |                            | 文章唯一标识 | 最大长度: 255   |
-| content  | string         | varchar      |                            | 文章内容   | 最大长度: 1024  |
+| content  | string         | varchar      |                            | 文章内容     | 最大长度: 1024  |
 | vector   | []byte         | binary array | HAMMING(default) / JACCARD | 文章内容向量 | 默认维度: 81920 |
-| metadata | map[string]any | json         |                            | 文章元数据  |             |
+| metadata | map[string]any | json         |                            | 文章元数据   |                 |
 
 ## 如何确定 dim 参数
 
@@ -182,6 +182,6 @@ return bytes
 ```
 
 其次，我们可以参考 [Milvus 官方文档](https://milvus.io/api-reference/go/v2.4.x/Collection/Vectors.md)
-在这里，我们的向量又经过了一次8倍的扩展
+在这里，我们的向量又经过了一次 8 倍的扩展
 
-因此，我们可以得到以 milvus 向量列的 dim 与嵌入模型的输出纬度之间的转换关系, dim = embedding model output * 4 * 8
+因此，我们可以得到以 milvus 向量列的 dim 与嵌入模型的输出纬度之间的转换关系, dim = embedding model output _ 4 _ 8

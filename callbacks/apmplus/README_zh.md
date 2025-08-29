@@ -13,7 +13,7 @@
 ## 安装
 
 ```bash
-go get github.com/cloudwego/eino-ext/callbacks/apmplus
+go get github.com/monosolo101/eino-ext/callbacks/apmplus
 ```
 
 ## 快速开始
@@ -25,7 +25,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/cloudwego/eino-ext/callbacks/apmplus"
+	"github.com/monosolo101/eino-ext/callbacks/apmplus"
 	"github.com/cloudwego/eino/callbacks"
 )
 
@@ -72,15 +72,15 @@ type Config struct {
     // 上报地址，用于观测指标上报，可从apmplus产品页面/文档获取 (必填)
     // 例子: "https://apmplus-cn-beijing.volces.com:4317"
     Host string
-    
+
     // 认证信息，可从apmplus产品页面获取 (必填)
     // 例子: "abc..."
     AppKey string
-    
+
     // 服务名称 (必填)
     // 例子: "my-app"
     ServiceName string
-    
+
     // 版本信息 (选填)
     // 默认值: ""
     // 例子: "v1.2.3"
@@ -91,4 +91,4 @@ type Config struct {
 ## 更多详情
 
 - [火山引擎 APMPlus 文档](https://www.volcengine.com/docs/6431/69092)
-- [Eino 文档](https://github.com/cloudwego/eino) 
+- [Eino 文档](https://github.com/cloudwego/eino)

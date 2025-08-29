@@ -28,7 +28,7 @@ import (
 	"github.com/cloudwego/eino/schema"
 	callbacksHelper "github.com/cloudwego/eino/utils/callbacks"
 
-	"github.com/cloudwego/eino-ext/components/indexer/volc_vikingdb"
+	"github.com/monosolo101/eino-ext/components/indexer/volc_vikingdb"
 )
 
 func main() {
